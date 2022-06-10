@@ -23,7 +23,7 @@ namespace BinarySearchTree_Day15
         public void Insert(T item)
         {
             T currentNodeValue = this.NodeData;
-            if(currentNodeValue.CompareTo(item) > 0)
+            if((currentNodeValue.CompareTo(item)) > 0)
             {
                 if (this.LeftTree == null)
                     this.LeftTree = new BinarySearchTree<T>(item);
@@ -40,6 +40,7 @@ namespace BinarySearchTree_Day15
         }
         public void Display()
         {
+
             if(this.LeftTree != null)
             {
                 this.leftCount++;
@@ -50,12 +51,13 @@ namespace BinarySearchTree_Day15
             {
                 this.rightCount++;
                 this.RightTree.Display();
-
-            }
+            }   
         }
         public void GetSize()
         {
-            Console.WriteLine("Size" + " " + (1 + this.leftCount + this.rightCount));
+            Console.WriteLine("Size"+" "+(1 + this.leftCount + this.rightCount));
+           
         }
+        
     }
 }
