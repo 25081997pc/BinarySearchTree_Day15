@@ -8,6 +8,7 @@ namespace BinarySearchTree_Day15
             Console.WriteLine("Welcome");
 
             BinarySearchTree<int> binarySearch = new BinarySearchTree<int>(56);
+
             binarySearch.Insert(30);
             binarySearch.Insert(70);
             binarySearch.Display();
